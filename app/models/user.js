@@ -12,7 +12,7 @@ var userSchema = mongoose.Schema({
         test         : String,
         currentweight  : Number,
         goalWeight     : Number,
-        allergies      : {type: Array,enum: 'Seafood', 'Wheat'},
+        allergies      : {type: Array,enum: ['Seafood', 'Wheat']},
         location       : {type: String,enum : ['GYM','HOME','BOTH']},
         fitnessgoals   : {type: String,enum : ['TONE','BUILD MUSCLE','LOSE WEIGHT','IMPROVE FLEXIBILTY','CARDIO',"NUTRITION"]},
       },
